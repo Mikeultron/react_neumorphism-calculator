@@ -65,7 +65,7 @@ const Calculator = () =>{
       <Screen input={input} history={history}/>
       <Keyboard backspace={backspace} clear={clear} addInput={addInput} addHistory={addHistory} calculate={calculate}/>
       <footer>
-        <a href="https://github.com/Mikeultron/React_Neumorphism-Calculator">Github</a>
+        <a href="https://github.com/Mikeultron/react_neumorphism-calculator">Github</a>
       </footer>
     </div>
   )
