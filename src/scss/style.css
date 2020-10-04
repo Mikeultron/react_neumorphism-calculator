@@ -1,0 +1,113 @@
+body {
+  background-color: #1a1a1a;
+  font-family: 'Poppins', sans-serif;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.buttons, button {
+  width: 50px;
+  height: 50px;
+  margin: 15px;
+  float: left;
+  border-radius: 50%;
+  border-width: 0;
+  font-weight: bold;
+  font-size: 15px;
+  -webkit-transition: .1s;
+  transition: .1s;
+}
+
+.buttons:focus, button:focus {
+  outline: 0;
+}
+
+.App {
+  width: 100%;
+  margin: auto;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.calculator {
+  width: 320px;
+  height: 520px;
+  margin: auto;
+  position: relative;
+  border-radius: 40px;
+  background-color: #1a1a1a;
+  -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3), -4px -4px 10px rgba(58, 58, 58, 0.2);
+          box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3), -4px -4px 10px rgba(58, 58, 58, 0.2);
+}
+
+.calculator footer {
+  text-align: center;
+}
+
+.calculator footer a {
+  color: #5e5e5e;
+}
+
+.result {
+  height: 120px;
+  color: #bfbfbf;
+  overflow: hidden;
+}
+
+.history {
+  text-align-last: right;
+  height: 20px;
+  margin: 0 20px;
+  padding-top: 20px;
+}
+
+.history .history-value {
+  font-size: 15px;
+  color: #919191;
+}
+
+.output {
+  text-align: right;
+  height: 60px;
+  margin: 10px 20px;
+}
+
+.output .output-value {
+  font-size: 30px;
+}
+
+.keyboard {
+  height: 400px;
+}
+
+button {
+  cursor: pointer;
+  background-color: #1a1a1a;
+  -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3), -4px -4px 10px rgba(58, 58, 58, 0.2);
+          box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3), -4px -4px 10px rgba(58, 58, 58, 0.2);
+  color: #5e5e5e;
+}
+
+button:active {
+  color: #494949;
+  font-size: 13px;
+  -webkit-box-shadow: inset 5px 5px 11px #121212,  inset -5px -5px 11px #222222;
+          box-shadow: inset 5px 5px 11px #121212,  inset -5px -5px 11px #222222;
+}
+
+button.empty {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  cursor: default;
+}
+/*# sourceMappingURL=style.css.map */

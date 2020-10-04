@@ -1,0 +1,95 @@
+@import './variables';
+
+body{
+  background-color: $mainColor;
+  font-family: 'Poppins', sans-serif;
+  user-select: none;
+}
+
+.buttons{
+  width: 50px;
+  height: 50px;
+  margin: 15px;
+  float: left;
+  border-radius: 50%;
+  border-width: 0;
+  font-weight: bold;
+  font-size: 15px;
+  transition: .1s;
+  &:focus{
+    outline: 0;
+  }
+}
+
+.App{
+  width: 100%;
+  margin: auto;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator{
+  width: 320px;
+  height: 520px;
+  margin: auto;
+  position: relative;
+  border-radius: 40px;
+  background-color: $mainColor;
+  box-shadow: $boxShadow;
+  footer{
+    text-align: center;
+    a{
+      color: #5e5e5e;
+    }
+  }
+}
+
+.result{
+  height: 120px;
+  color: #bfbfbf;
+  overflow: hidden;
+}
+
+.history{
+  text-align-last: right;
+  height: 20px;
+  margin: 0 20px;
+  padding-top: 20px;
+  .history-value{
+    font-size: 15px;
+    color: #919191;
+  }
+}
+
+.output{
+  text-align: right;
+  height: 60px;
+  margin: 10px 20px;
+  .output-value{
+    font-size: 30px;
+  }
+}
+
+.keyboard{
+  height: 400px;
+}
+
+button{
+  @extend .buttons;
+  cursor: pointer;
+  background-color: $mainColor;
+  box-shadow: $boxShadow;
+  color: #5e5e5e;
+  &:active{
+    color: #494949;
+    font-size: 13px;
+    box-shadow: inset 5px 5px 11px #121212, 
+    inset -5px -5px 11px #222222;
+  }
+  &.empty{
+    box-shadow: none;
+    cursor: default;
+  }
+}
